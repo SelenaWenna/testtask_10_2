@@ -1,0 +1,36 @@
+.purchase {
+  &__title {
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.option {
+  text-align: center;
+  color: $color-white;
+  background: linear-gradient(180deg, #8CB928 0%, #45AE4D 100%);
+  border-radius: 18px;
+  width: calc((100% - 105px) / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 0 18px;
+  text-decoration: none;
+  &__icon {
+    margin-top: auto;
+  }
+  &__title {
+    margin-top: 13px;
+    line-height: 19px;
+    &_single {
+      margin-top: 20px;
+    }
+  }
+  &__subtitle {
+    min-height: 16px;
+  }
+}

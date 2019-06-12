@@ -1,0 +1,6 @@
+.app {
+  overflow-y: auto;
+  &_hidden {
+    overflow: hidden;
+  }
+}
