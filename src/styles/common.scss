@@ -1,0 +1,13 @@
+@import './_fonts.scss';
+
+body {
+  background: $color-alabaster;
+  padding: 40px 0;
+}
+button,
+input {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}

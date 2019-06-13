@@ -7,7 +7,11 @@
     ordering
     comments
   transition(name="fade")
-    good-modal(v-if="currentModal" :content="currentModal" :sidePosition="sidePosition" @closeModal="closeModal")
+    good-modal(
+      v-if="currentModal"
+      :content="currentModal"
+      :sidePosition="sidePosition"
+      @closeModal="closeModal")
 </template>
 
 <script>
@@ -46,3 +50,48 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+#app {
+  font-family: $font-family-roboto;
+  color: $color-shark;
+}
+.body_modal {
+  overflow: hidden;
+}
+.container {
+  max-width: 960px;
+  min-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+// Uikit
+::v-deep {
+  .h1 {
+    font-family: $font-family-roboto-condensed;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .h2 {
+    font-family: $font-family-roboto-condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+  }
+  .p1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .p2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+</style>
